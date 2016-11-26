@@ -12,3 +12,5 @@ Project scaffolded with Stephen Grinder's ReduxSimpleStater.
 #Done
 - Setting up Express server with /json, /json/:player endpoints
 - Adding assets to /data and /assets in public folder
+- Installing redux-promise
+- Installing axios for handling AJAX requests
