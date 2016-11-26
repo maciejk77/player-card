@@ -14,3 +14,4 @@ Project scaffolded with Stephen Grinder's ReduxSimpleStater.
 - Adding assets to /data and /assets in public folder
 - Installing redux-promise
 - Installing axios for handling AJAX requests
+- Resolving CORS issue in Express server - adding headers
