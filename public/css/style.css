@@ -1,3 +1,7 @@
+body {
+  background-color: gray;
+}
+
 select {
    -webkit-appearance: none;
    -moz-appearance: none;
@@ -12,19 +16,49 @@ select {
 
 .container {
   border: 1px solid red; /* to be deleted */
-/*  width: 400px;*/
+  width: 400px;
 }
 
 .card__select {
   border: 1px solid green; /* to be deleted */
+  margin: 10px 0; /* to be deleted */
 }
 
-.card__player-image {}
-.card__club-badge {}
-.card__info {}
-.info {}
-.card__stats-group {}
-.stats-group__item {}
+.card__player-image {
+    border: 1px solid yellow; /* to be deleted */
+    margin-bottom: 10px; /* to be deleted */
+}
+
+.card__club-badge {
+    border: 1px solid black; /* to be deleted */
+    width: 107px;
+    height: 107px;    
+    margin-bottom: 10px; /* to be deleted */
+}
+
+.card__info {
+    border: 1px solid blue; /* to be deleted */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.info {
+    border: 1px solid red; /* to be deleted */
+    padding: 5px;
+    margin: 5px;
+}
+
+.card__stats-group {
+    border: 1px solid green; /* to be deleted */
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.stats-group__item {
+    border: 1px solid black; /* to be deleted */
+    padding: 5px;
+    margin: 5px;
+}
 
 
 
