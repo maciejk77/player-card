@@ -24,7 +24,7 @@ class SearchList extends Component {
     this.props.getPlayer(this.state.value);
     
     return (
-      <select value={this.state.value} onChange={this.handleChange}>
+      <select className="card__select" value={this.state.value} onChange={this.handleChange}>
         <option value="Alderweireld">Alderweireld</option>
         <option value="Mahrez">Mahrez</option>
         <option value="Mertesacker">Mertesacker</option>

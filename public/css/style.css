@@ -9,3 +9,24 @@ select {
    background-color: lightgray;
    border: none;
 }
+
+.container {
+  border: 1px solid red; /* to be deleted */
+/*  width: 400px;*/
+}
+
+.card__select {
+  border: 1px solid green; /* to be deleted */
+}
+
+.card__player-image {}
+.card__club-badge {}
+.card__info {}
+.info {}
+.card__stats-group {}
+.stats-group__item {}
+
+
+
+
+

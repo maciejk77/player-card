@@ -16,15 +16,19 @@ class PlayerList extends Component {
 
     return (
       <div key={playerData.player.name.last}>
-        <div>{playerData.player.name.first} {playerData.player.name.last}</div>
-        <div>{position}</div>
-        <div>Appearances: {playerData.stats[6].value}</div>
-        <div>Goals: {playerData.stats[0].value}</div>
-        <div>Assists: {playerData.stats[5].value}</div>
-        <div>Goals per match: {goalsPerMatch}</div>
-        <div>Passes per minute: {passesPerMinute}</div>
-        <div><img src={playerImage}></img></div>
-        <div className={clubName}></div>
+        <div className="card__player-image"><img src={playerImage}></img></div>
+        <div className="card__club-badge"><div className={clubName}></div></div> 
+        <div className="card__info">
+          <div className="info">{playerData.player.name.first} {playerData.player.name.last}</div>
+          <div className="info">{position}</div>
+        </div>
+        <div className="card__stats-group">  
+          <div className="stats-group__item">Appearances: {playerData.stats[6].value}</div>
+          <div className="stats-group__item">Goals: {playerData.stats[0].value}</div>
+          <div className="stats-group__item">Assists: {playerData.stats[5].value}</div>
+          <div className="stats-group__item">Goals per match: {goalsPerMatch}</div>
+          <div className="stats-group__item">Passes per minute: {passesPerMinute}</div>
+        </div>
       </div>
     )
   }
