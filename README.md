@@ -1,8 +1,10 @@
 # Player Card
 
-## A project to build player card with data pulled from static JSON. There are also image assets e.g. player's image and club badges witch are obtained via CSS image sprites.  
+A project to build player card with data pulled from static JSON. There are also image assets e.g. player's image and club badges witch are obtained via CSS image sprites.  
 
-Project scaffolded with Stephen Grinder's ReduxSimpleStater. 
+This project was scaffolded with a help of Stephen Grinder's ReduxSimpleStater. 
+
+##Instruction
 
 Update all dependancies
 `npm install`
