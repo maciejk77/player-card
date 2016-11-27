@@ -6,8 +6,8 @@ class PlayerList extends Component {
   renderPlayer(playerData) {
     
     const playerImage = `public/assets/p${playerData.player.id}.png`;
-    //const clubBadge = 'public/assets/css/badges.css';
-
+    const el = (playerData.player.currentTeam.name.toLowerCase().split(' '));
+    const clubBadge = `${el[0]}-${el[1]}`;
 
     return (
       <div key={playerData.player.name.last}>
@@ -19,7 +19,7 @@ class PlayerList extends Component {
         <div>Goals per match: {playerData.stats[0].value} / {playerData.stats[6].value}</div>
         <div>Passes per minute: {playerData.stats[4].value} + {playerData.stats[8].value} / {playerData.stats[7].value}</div>
         <div><img src={playerImage}></img></div>
-        <div><img src="../legia.jpg" widdth="150px" height="150px"></img></div>
+        <div className={clubBadge}></div>
       </div>
     )
   }
