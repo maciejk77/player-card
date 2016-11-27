@@ -9,13 +9,11 @@ class SearchList extends Component {
     this.state = { value: 'Alderweireld' };
 
     this.handleChange = this.handleChange.bind(this);
-
   }
 
   handleChange(event) {
     this.setState({ value: event.target.value });
   }
-
 
   render() {
     
@@ -24,9 +22,9 @@ class SearchList extends Component {
     return (
       <select value={this.state.value} onChange={this.handleChange}>
         <option value="Alderweireld">Alderweireld</option>
-        <option value="Rooney">Rooney</option>
-        <option value="Mertesacker">Mertesacker</option>
         <option value="Mahrez">Mahrez</option>
+        <option value="Mertesacker">Mertesacker</option>
+        <option value="Rooney">Rooney</option>
         <option value="Touré">Touré</option>
       </select>
     )
@@ -72,10 +70,8 @@ class SearchList extends Component {
 //   }
 // }
 
-
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ getPlayer }, dispatch);
 }
 
 export default connect(null, mapDispatchToProps)(SearchList);
-
