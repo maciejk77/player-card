@@ -21,9 +21,8 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - Switching to drop-down from search bar
 
 ##To be done
-- Applying math calculations on JSON data before rendering
 - Fixing stats JSON data 'fudged' into player_list.js container at the moment
 - Drop down menu options to be based on JSON not fixed - player_list.js container
 - Fixing 'Mertesacker' error in console, other options from drop-down works just fine
-- Adding club badges - CSS sprites (Arsenal, ManCity, ManU, Spurs, Leicester)
 - Create a Player Card UI
+- Work on Position name only to display last element eg. Striker, Defender
