@@ -25,4 +25,4 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - Drop down menu options to be based on JSON not fixed - player_list.js container
 - Fixing 'Mertesacker' error in console, other options from drop-down works just fine
 - Create a Player Card UI
-- Work on Position name only to display last element eg. Striker, Defender
+

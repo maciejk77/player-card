@@ -1,0 +1,11 @@
+select {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   border-radius: 0px;
+   padding: 5px;
+   width: 250px;
+   background-color: lightgray;
+   border: none;
+}
