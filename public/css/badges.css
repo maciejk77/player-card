@@ -1,0 +1,36 @@
+.arsenal, .leicester-city, .manchester-city, .manchester-united, .tottenham-hotspur {
+  background-image: url('../assets/badges_sprite.png');
+  background-repeat: no-repeat;
+}
+
+.arsenal {
+  background-position: -100px -97px; 
+  width: 100px;
+  height: 105px;
+}
+
+.leicester-city {
+  background-position: 0px 0px; 
+  width: 100px;
+  height: 115px;
+}
+
+.manchester-city {
+  background-position: -797px -697px; 
+  width: 105px;
+  height: 105px;
+}
+
+.manchester-united {
+  background-position: -597px -797px; 
+  width: 105px;
+  height: 105px;
+}
+
+.tottenham-hotspur {
+  background-position: -496px -1000px; 
+  width: 105px;
+  height: 100px;
+}
+
+

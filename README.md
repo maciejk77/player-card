@@ -9,6 +9,8 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - `node server.js` to start the server
 - `npm start` to start the app
 - `localhost://8080` address in the browser to access app
+- `localhost://3000` address to see served JSON data or e.g. `localhost://3000/Rooney`
+
 
 ##Done
 - Setting up Express server with /json, /json/:player endpoints
@@ -20,9 +22,8 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 
 ##To be done
 - Applying math calculations on JSON data before rendering
-- Making sure that {targetImage} will be treated as a string to display image - player_list.js
 - Fixing stats JSON data 'fudged' into player_list.js container at the moment
 - Drop down menu options to be based on JSON not fixed - player_list.js container
 - Fixing 'Mertesacker' error in console, other options from drop-down works just fine
-- Adding club badges - CSS sprites
+- Adding club badges - CSS sprites (Arsenal, ManCity, ManU, Spurs, Leicester)
 - Create a Player Card UI
