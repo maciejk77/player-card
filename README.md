@@ -1,20 +1,14 @@
 # Player Card
 
-A project to build player card with data pulled from static JSON. There are also image assets e.g. player's image and club badges witch are obtained via CSS image sprites.  
+A project to build player card with data pulled from static JSON. There are also image assets e.g. player's image and club badges which are obtained via CSS image sprites.  
 
-This project was scaffolded with a help of Stephen Grinder's ReduxSimpleStater. 
+This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
 ##Instruction
-
-Update all dependancies
-`npm install`
-
-Start the server
-`node server.js`
-
-Start the app, access at `localhost://8080`
-`npm start`
-
+- `npm install` to update all dependancies
+- `node server.js` to start the server
+- `npm start` to start the app
+- `localhost://8080` address in the browser to access app
 
 ##Done
 - Setting up Express server with /json, /json/:player endpoints
