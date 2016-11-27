@@ -16,7 +16,7 @@ class PlayerList extends Component {
         <div>Assists: {playerData.stats[5].value}</div>
         <div>Goals per match: {playerData.stats[0].value} / {playerData.stats[6].value}</div>
         <div>Passes per minute: {playerData.stats[4].value} + {playerData.stats[8].value} / {playerData.stats[7].value}</div>
-        <div><img src="{targetImage}"></img></div>
+        <div><img src={targetImage}></img></div>
       </div>
     )
   }
