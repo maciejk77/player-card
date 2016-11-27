@@ -17,29 +17,39 @@ select {
 .container {
   border: 1px solid red; /* to be deleted */
   width: 400px;
+  background-color: white;
+  margin: 0 auto;
+  padding: 0 5px 5px 5px;
 }
 
 .card__select {
   border: 1px solid green; /* to be deleted */
-  margin: 10px 0; /* to be deleted */
+  margin: 10px 0 10px 0px; /* to be deleted */
+  padding: 10px;
 }
 
 .card__player-image {
     border: 1px solid yellow; /* to be deleted */
     margin-bottom: 10px; /* to be deleted */
+    padding-left: 15px;
 }
 
 .card__club-badge {
     border: 1px solid black; /* to be deleted */
-    width: 107px;
-    height: 107px;    
+    width: 120px;
+    height: 108px;    
     margin-bottom: 10px; /* to be deleted */
+    position: absolute;
+    left: 285px;
+    top: 315px;
 }
 
 .card__info {
     border: 1px solid blue; /* to be deleted */
     padding: 5px;
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
+    background-color: #E90053;
+    color: #EAEAEA;
 }
 
 .info {
@@ -51,13 +61,14 @@ select {
 .card__stats-group {
     border: 1px solid green; /* to be deleted */
     padding: 5px;
-    margin-bottom: 10px;
+    background-color: #E90053;
 }
 
 .stats-group__item {
     border: 1px solid black; /* to be deleted */
     padding: 5px;
     margin: 5px;
+    background-color: #EAEAEA;
 }
 
 
