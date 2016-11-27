@@ -2,30 +2,30 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 class PlayerList extends Component {
+
   renderPlayer(playerData) {
+    
+    const targetImage = `public/assets/p${playerData.player.id}.png`;
+
     return (
-      <tr key={playerData.player.name.last}>
-        <td>{playerData.player.name.first}</td>
-        <td>{playerData.player.name.last}</td>
-        <td>{playerData.player.age}</td>
-      </tr>
+      <div key={playerData.player.name.last}>
+        <div>{playerData.player.name.first} {playerData.player.name.last}</div>
+        <div>{playerData.player.info.positionInfo}</div>
+        <div>Appearances: {playerData.stats[6].value}</div>
+        <div>Goals: {playerData.stats[0].value}</div>
+        <div>Assists: {playerData.stats[5].value}</div>
+        <div>Goals per match: {playerData.stats[0].value} / {playerData.stats[6].value}</div>
+        <div>Passes per minute: {playerData.stats[4].value} + {playerData.stats[8].value} / {playerData.stats[7].value}</div>
+        <div><img src="{targetImage}"></img></div>
+      </div>
     )
   }
 
   render() {
     return (
-      <table className="table table-hover">
-        <thead>
-          <tr>
-            <th>Player</th>
-            <th>Club</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.props.player.map(this.renderPlayer)}
-        </tbody>
-      </table>
+      <div>
+        {this.props.player.map(this.renderPlayer)}
+      </div>
     );
   }
 }
