@@ -11,8 +11,8 @@ class PlayerList extends Component {
     const el = (playerData.player.currentTeam.name.toLowerCase().split(' '));
     const clubName = `${el[0]}-${el[1]}`;
 
-    const goalsPerMatch = ( parseInt(playerData.stats[0].value) / parseInt(playerData.stats[6].value) ).toString().substr(0,4);
-    const passesPerMinute = ( (parseInt(playerData.stats[4].value) + parseInt(playerData.stats[8].value)) / parseInt(playerData.stats[7].value) ).toString().substr(0,4);
+    const goalsPerMatch = (parseInt(playerData.stats[0].value) / parseInt(playerData.stats[6].value)).toFixed(2);
+    const passesPerMinute = ((parseInt(playerData.stats[4].value) + parseInt(playerData.stats[8].value)) / parseInt(playerData.stats[7].value)).toFixed(2);
 
     return (
       <div key={playerData.player.name.last}>
