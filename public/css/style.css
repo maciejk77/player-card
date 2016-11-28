@@ -18,13 +18,13 @@ select {
 i {
   display: inline-block;
   font-style: normal;
-  position: absolute;
+  position: relative;
 }
 
 /* Additional formatting for arrow icon */
 i.arrow {
-    top: 53pt;
-    right: 145pt;
+    top: 39pt;
+    left: 250pt;
     width: 0.5em;
     height: 0.5em;
     border-right: 0.2em solid black;
