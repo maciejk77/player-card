@@ -11,7 +11,6 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - `localhost://8080` address in the browser to access app
 - `localhost://3000` address to see served JSON data or e.g. `localhost://3000/Rooney`
 
-
 ##Done
 - Setting up Express server with /json, /json/:player endpoints
 - Adding assets to /data and /assets in public folder
@@ -24,5 +23,10 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - Fixing stats JSON data 'fudged' into player_list.js container at the moment
 - Drop down menu options to be based on JSON not fixed - player_list.js container
 - Fixing 'Mertesacker' error in console, other options from drop-down works just fine
-- Create a Player Card UI
+- Down arrow is not clickable yet
+- Updating Webpack and moving CSS classes to Sass
+- Review, remove so unused packages, modules from ReduxSimpleStarter
 
+##Preview
+
+![player-card screenshot](https://github.com/maciejk77/player-card/blob/master/public/assets/screenshot.png?raw=true)
