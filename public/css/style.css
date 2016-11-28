@@ -1,5 +1,5 @@
 body {
-  background-color: gray;
+  background-color: #DDDDDD;
 }
 
 select {
@@ -14,64 +14,88 @@ select {
    border: none;
 }
 
+/* Default icon formatting */
+i {
+  display: inline-block;
+  font-style: normal;
+  position: absolute;
+}
+
+/* Additional formatting for arrow icon */
+i.arrow {
+    top: 53pt;
+    right: 145pt;
+    width: 0.5em;
+    height: 0.5em;
+    border-right: 0.2em solid black;
+    border-top: 0.2em solid black;
+    transform: rotate(135deg);
+}
+
 .container {
-  border: 1px solid red; /* to be deleted */
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  border: 1px solid black; 
   width: 400px;
   background-color: white;
-  margin: 0 auto;
-  padding: 0 5px 5px 5px;
+  margin: 35px auto;
 }
 
 .card__select {
-  border: 1px solid green; /* to be deleted */
-  margin: 10px 0 10px 0px; /* to be deleted */
-  padding: 10px;
+  width: 90%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  margin: 20px;
+  background-color: #EAEAEA;
+
+  padding: 10px 20px;
 }
 
 .card__player-image {
-    border: 1px solid yellow; /* to be deleted */
-    margin-bottom: 10px; /* to be deleted */
     padding-left: 15px;
+    position: relative;
+    left: 1px;
+    top: 8px;
 }
 
 .card__club-badge {
-    border: 1px solid black; /* to be deleted */
     width: 120px;
     height: 108px;    
-    margin-bottom: 10px; /* to be deleted */
-    position: absolute;
-    left: 285px;
-    top: 315px;
+    position: relative;
+    float:right;
+    left: -20px;
+    top: -40px;
+    z-index: 2;
 }
 
 .card__info {
-    border: 1px solid blue; /* to be deleted */
     padding: 5px;
-    /*margin-bottom: 10px;*/
     background-color: #E90053;
     color: #EAEAEA;
+    margin: 2px 2px 0px 2px;
 }
 
 .info {
-    border: 1px solid red; /* to be deleted */
     padding: 5px;
     margin: 5px;
 }
 
 .card__stats-group {
-    border: 1px solid green; /* to be deleted */
-    padding: 5px;
+    padding: 1px 0;
     background-color: #E90053;
+    margin: 0 2px 2px 2px;
+    padding: 5px 10px 20px 10px;
 }
 
 .stats-group__item {
-    border: 1px solid black; /* to be deleted */
-    padding: 5px;
-    margin: 5px;
+    padding: 1px;
+    margin: 0px 5px 4px 5px;
     background-color: #EAEAEA;
+    padding: 8px 16px;
 }
 
-
-
-
+.stats-group__item-data {
+  float: right;
+  font-weight: bold;
+}
 

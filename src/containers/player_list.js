@@ -23,11 +23,11 @@ class PlayerList extends Component {
           <div className="info">{position}</div>
         </div>
         <div className="card__stats-group">  
-          <div className="stats-group__item">Appearances: {playerData.stats[6].value}</div>
-          <div className="stats-group__item">Goals: {playerData.stats[0].value}</div>
-          <div className="stats-group__item">Assists: {playerData.stats[5].value}</div>
-          <div className="stats-group__item">Goals per match: {goalsPerMatch}</div>
-          <div className="stats-group__item">Passes per minute: {passesPerMinute}</div>
+          <div className="stats-group__item">Appearances<span className="stats-group__item-data">{playerData.stats[6].value}</span></div>
+          <div className="stats-group__item">Goals<span className="stats-group__item-data">{playerData.stats[0].value}</span></div>
+          <div className="stats-group__item">Assists<span className="stats-group__item-data">{playerData.stats[5].value}</span></div>
+          <div className="stats-group__item">Goals per match<span className="stats-group__item-data">{goalsPerMatch}</span></div>
+          <div className="stats-group__item">Passes per minute<span className="stats-group__item-data">{passesPerMinute}</span></div>
         </div>
       </div>
     )

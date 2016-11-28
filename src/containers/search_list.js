@@ -24,13 +24,15 @@ class SearchList extends Component {
     this.props.getPlayer(this.state.value);
     
     return (
-      <select className="card__select" value={this.state.value} onChange={this.handleChange}>
-        <option value="Alderweireld">Alderweireld</option>
-        <option value="Mahrez">Mahrez</option>
-        <option value="Mertesacker">Mertesacker</option>
-        <option value="Rooney">Rooney</option>
-        <option value="Touré">Touré</option>
+      <div><i className="arrow"></i>
+      <select className="card__select arrow" value={this.state.value} onChange={this.handleChange}>
+        <option value="Alderweireld">Toby Alderweireld</option>
+        <option value="Mahrez">Riyad Mahrez</option>
+        <option value="Mertesacker">Per Mertesacker</option>
+        <option value="Rooney">Wayne Rooney</option>
+        <option value="Touré">Yaya Touré</option>
       </select>
+     </div>
     )
   }  
 }

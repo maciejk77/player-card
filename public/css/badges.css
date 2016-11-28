@@ -2,7 +2,7 @@
   background-image: url('../assets/badges_sprite.png');
   background-repeat: no-repeat;
   border-radius: 50px;
-  border: 1px solid red;
+/*  border: 1px solid red;*/
   margin: auto;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .leicester-city {
-  background-position: 2px 0px; 
+  background-position: 2px 1px; 
   width: 105px;
   height: 102px;
 }
