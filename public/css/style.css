@@ -72,7 +72,7 @@ i.arrow {
     padding: 5px;
     background-color: #E90053;
     color: #EAEAEA;
-    margin: 2px 2px 0px 2px;
+    margin: 2px 1px 0px 2px;
 }
 
 .info {
@@ -83,7 +83,7 @@ i.arrow {
 .card__stats-group {
     padding: 1px 0;
     background-color: #E90053;
-    margin: 0 2px 2px 2px;
+    margin: 0 1px 1px 2px;
     padding: 5px 10px 20px 10px;
 }
 
