@@ -26,6 +26,7 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - Down arrow is not clickable yet
 - Updating Webpack and moving CSS classes to Sass
 - Review, remove so unused packages, modules from ReduxSimpleStarter
+- Is 'Select a player...' correct from UX perspective if player already displayed?
 
 ##Preview
 
