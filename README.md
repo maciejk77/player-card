@@ -23,7 +23,7 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - Fixing stats JSON data 'fudged' into player_list.js container at the moment
 - Drop down menu options to be based on JSON not fixed - player_list.js container
 - Fixing 'Mertesacker' error in console, other options from drop-down works just fine
-- Down arrow is not clickable yet
+- Down arrow is not clickable yet, menu to drop down, choice of fonts?
 - Updating Webpack and moving CSS classes to Sass
 - Review, remove so unused packages, modules from ReduxSimpleStarter
 - Is 'Select a player...' correct from UX perspective if player already displayed?
