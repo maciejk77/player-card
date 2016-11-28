@@ -59,13 +59,14 @@ i.arrow {
 }
 
 .card__club-badge {
-    width: 120px;
-    height: 108px;    
+    background: white;
+    border-radius: 50px;
+    width: 105px;
+    height: 105px;    
     position: relative;
     float:right;
     left: -20px;
     top: -40px;
-    z-index: 2;
 }
 
 .card__info {
