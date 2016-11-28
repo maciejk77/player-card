@@ -1,6 +1,6 @@
 # Player Card
 
-A project to build player card with data pulled from static JSON. There are also image assets e.g. player's image and club badges which are obtained via CSS image sprites.  
+A project to build player card with data pulled from **static JSON**. There are also image assets e.g. player's image and club badges which are obtained via **CSS image sprite**.  
 
 This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
@@ -12,11 +12,11 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - `localhost://3000` address to see served JSON data or e.g. `localhost://3000/Rooney`
 
 ##Done
-- Setting up Express server with /json, /json/:player endpoints
+- Setting up **Express server** with /json, /json/:player endpoints
 - Adding assets to /data and /assets in public folder
-- Installing redux-promise
-- Installing axios for handling AJAX requests
-- Resolving CORS issue in Express server - adding headers
+- Installing **redux-promise**
+- Installing **axios** for handling AJAX requests
+- Resolving **CORS** issue in Express server - adding headers
 - Switching to drop-down from search bar
 
 ##To be done
