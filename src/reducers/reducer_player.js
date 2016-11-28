@@ -5,6 +5,5 @@ export default function(state=[], action) {
     case GET_PLAYER:
       return [ action.payload.data ];
   }
-
   return state;
 }

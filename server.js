@@ -13,7 +13,7 @@ app.get('/', function (req, res) {
 })
 
 app.get('/:playerName', function(req, res) {
-  // Change to more elegant for ...in loop?
+  // Change to more elegant for ...in loop? - ES6 map?
   for(var i=0; i<data.players.length; i++) {
     if(data.players[i].player.name.last === req.params.playerName) {
       res.send(data.players[i]);
@@ -22,5 +22,5 @@ app.get('/:playerName', function(req, res) {
 });
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('App listening on port 3000!')
 })
