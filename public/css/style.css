@@ -3,100 +3,95 @@ body {
 }
 
 select {
-   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 
-   border-radius: 0px;
-   padding: 5px;
-   width: 250px;
-   background-color: lightgray;
-   border: none;
+  background-color: lightgray;
+  border: none;
+  border-radius: 0px;
+  padding: 5px;
+  width: 250px;
 }
 
-/* Default icon formatting */
 i {
   display: inline-block;
   font-style: normal;
   position: relative;
 }
 
-/* Additional formatting for arrow icon */
 i.arrow {
-    top: 39pt;
-    left: 250pt;
-    width: 0.5em;
-    height: 0.5em;
-    border-right: 0.2em solid black;
-    border-top: 0.2em solid black;
-    transform: rotate(135deg);
+  border-right: 0.2em solid black;
+  border-top: 0.2em solid black;
+  height: 0.5em;
+  left: 250pt;
+  transform: rotate(135deg);
+  top: 39pt;
+  width: 0.5em;
 }
 
 .container {
+  background-color: white;
+  border: 1px solid black; 
   font-family: Verdana, Geneva, sans-serif;
   font-size: 22px;
-  border: 1px solid black; 
-  width: 400px;
-  background-color: white;
   margin: 35px auto;
+  width: 400px;
 }
 
 .card__select {
-  width: 90%;
+  background-color: #EAEAEA;
   font-family: Verdana, Geneva, sans-serif;
   font-size: 22px;
   margin: 20px;
-  background-color: #EAEAEA;
-
   padding: 10px 20px;
+  width: 90%;
 }
 
 .card__player-image {
-    padding-left: 15px;
-    position: relative;
-    left: 1px;
-    top: 8px;
+  padding-left: 15px;
+  position: relative;
+  left: 1px;
+  top: 8px;
 }
 
 .card__club-badge {
-    background: white;
-    border-radius: 50px;
-    width: 105px;
-    height: 105px;    
-    position: relative;
-    float:right;
-    left: -20px;
-    top: -40px;
+  background: white;
+  border-radius: 50px;
+  float:right;
+  height: 105px;    
+  left: -20px;
+  position: relative;
+  top: -40px;
+  width: 105px;
 }
 
 .card__info {
-    padding: 5px;
-    background-color: #E90053;
-    color: #EAEAEA;
-    margin: 2px 1px 0px 2px;
+  background-color: #E90053;
+  color: #EAEAEA;
+  margin: 2px 1px 0px 2px;
+  padding: 5px;
 }
 
 .info {
-    padding: 5px;
-    margin: 5px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .card__stats-group {
-    padding: 1px 0;
-    background-color: #E90053;
-    margin: 0 1px 1px 2px;
-    padding: 5px 10px 20px 10px;
+  background-color: #E90053;
+  margin: 0 1px 1px 2px;
+  padding: 5px 10px 20px 10px;
 }
 
 .stats-group__item {
-    padding: 1px;
-    margin: 0px 5px 4px 5px;
-    background-color: #EAEAEA;
-    padding: 8px 16px;
+  background-color: #EAEAEA;
+  margin: 0px 5px 4px 5px;
+  padding: 8px 16px;
 }
 
 .stats-group__item-data {
-  float: right;
   font-weight: bold;
+  float: right;
 }
 
