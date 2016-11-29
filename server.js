@@ -13,12 +13,11 @@ app.get('/', function (req, res) {
 })
 
 app.get('/:playerName', function(req, res) {
-  // Change to more elegant for ...in loop? - ES6 map?
-  for(var i=0; i<data.players.length; i++) {
-    if(data.players[i].player.name.last === req.params.playerName) {
-      res.send(data.players[i]);
+  data.players.map(function(key, value) {
+    if(data.players[value].player.name.last === req.params.playerName) {
+      res.send(data.players[value]);
     }
-  } 
+  });
 });
 
 app.listen(3000, function () {
