@@ -9,6 +9,18 @@ class PlayerList extends Component {
     super(props);
   }
 
+  // // To capitalise first letter in keys/values returned from JSON
+  // Array.prototype.insert = function (index, item) {
+  //   this.splice(index, 0, item);
+  // };
+
+  // function toProper(word) {
+  //   var arr = word.split('');
+  //   var firstLetter = arr.shift().toUpperCase();
+  //   arr.insert(0, firstLetter);
+  //   return arr.join('');
+  // }
+
   renderStats(playerStats) {
 
     // List of stat properties we want to show;
@@ -35,14 +47,14 @@ class PlayerList extends Component {
 
     const el = (this.props.player.currentTeam.name.toLowerCase().split(' '));
     if(el.length > 1) { var clubName = `${el[0]}-${el[1]}`; } else { var clubName = `${el[0]}`;}
-    
+
     return (
       <div>
         <div className="card__player-image"><img src={playerImage}></img></div>
         <div className="card__club-badge"><div className={clubName}></div></div>
         <div className="card__info">
           <div className="card__info">{this.props.player.name.first} {this.props.player.name.last}</div>
-          <div className="card__info">{position}</div>
+          <div className="card__info">({position}</div>
         </div>
         <div className="card__stats-group">
           <div className="stats-group__item">{this.props.stats.map(this.renderStats)}</div>
