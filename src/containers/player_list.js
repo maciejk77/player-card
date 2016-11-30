@@ -54,7 +54,7 @@ class PlayerList extends Component {
         <div className="card__club-badge"><div className={clubName}></div></div>
         <div className="card__info">
           <div className="card__info">{this.props.player.name.first} {this.props.player.name.last}</div>
-          <div className="card__info">({position}</div>
+          <div className="card__info">{position}</div>
         </div>
         <div className="card__stats-group">
           <div className="stats-group__item">{this.props.stats.map(this.renderStats)}</div>
