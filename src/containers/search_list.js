@@ -7,11 +7,6 @@ class SearchList extends Component {
   constructor(props) {
     super(props);
     this.state = { value: 'Alderweireld' };
-
-    // Try first below instead and second as the first option in the list to get 'Select a player...'
-    //this.state = { value: '' };
-    //<option value="Alderweireld" defaultValue>Select a player...</option>
-
     this.handleChange = this.handleChange.bind(this);
   }
 
