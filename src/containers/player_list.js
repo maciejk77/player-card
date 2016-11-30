@@ -1,8 +1,8 @@
-//   const goalsPerMatch = (parseInt(playerData.stats[0].value) / parseInt(playerData.stats[6].value)).toFixed(2);
-//   const passesPerMinute = ((parseInt(playerData.stats[4].value) + parseInt(playerData.stats[8].value)) / parseInt(playerData.stats[7].value)).toFixed(2);
-
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
+// const goalsPerMatch = (parseInt(playerStats.stats.goals) / parseInt(playerStats.stats.appearances)).toFixed(2);
+// const passesPerMinute = ((parseInt(playerStats.stats.fwd_pass) + parseInt(playerStats.stats.backward_pass)) / parseInt(playerStats.stats.mins_played)).toFixed(2);
 
 class PlayerList extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class PlayerList extends Component {
 
     // List of stat properties we want to show;
     // If any is found in JSON but not in this array, it'll be ignored;
-    const statsToDisplay = ['goals', 'losses', 'wins', 'appearances', 'minutes_played'];
+    const statsToDisplay = ['goals', 'goal_assist', 'appearances'];
 
     if (statsToDisplay.indexOf(playerStats.name) > -1) {
       return (<div key={playerStats.name}>{playerStats.name} <span className="stats-group__item-data">{playerStats.value}</span></div>);
@@ -46,7 +46,7 @@ class PlayerList extends Component {
     const position = this.props.player.info.positionInfo.split(' ').pop();
 
     const el = (this.props.player.currentTeam.name.toLowerCase().split(' '));
-    if(el.length > 1) { var clubName = `${el[0]}-${el[1]}`; } else { var clubName = `${el[0]}`;}
+    if(el.length > 1) { var clubName = `${el[0]}-${el[1]}`; } else { var clubName = `${el[0]}`; }
 
     return (
       <div>
