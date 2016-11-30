@@ -16,7 +16,7 @@ class PlayerList extends Component {
     const statsToDisplay = ['goals', 'losses', 'wins', 'appearances', 'minutes_played'];
 
     if (statsToDisplay.indexOf(playerStats.name) > -1) {
-      return (<div key={playerStats.name}>{playerStats.name}: {playerStats.value}</div>);
+      return (<div key={playerStats.name}>{playerStats.name} <span className="stats-group__item-data">{playerStats.value}</span></div>);
     } else {
       return null;
     }
@@ -38,11 +38,15 @@ class PlayerList extends Component {
 
     return (
       <div>
-        <div><img src={playerImage}></img></div>
-        <div className={clubName}></div>
-        <div>{this.props.player.name.first} {this.props.player.name.last}</div>
-        <div>{position}</div>
-        {this.props.stats.map(this.renderStats)}
+        <div className="card__player-image"><img src={playerImage}></img></div>
+        <div className="card__club-badge"><div className={clubName}></div></div>
+        <div className="card__info">
+          <div className="card__info">{this.props.player.name.first} {this.props.player.name.last}</div>
+          <div className="card__info">{position}</div>
+        </div>
+        <div className="card__stats-group">
+          <div className="stats-group__item">{this.props.stats.map(this.renderStats)}</div>
+        </div>
       </div>
     );
   }

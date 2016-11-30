@@ -37,7 +37,7 @@ class SearchList extends Component {
     }
 
     return (
-      <select value={this.state.currentPlayer} onChange={this.handleChange}>
+      <select className="card__select" value={this.state.currentPlayer} onChange={this.handleChange}>
       <option value="">Select a player...</option>
         {this.props.players.map(this.renderPlayers)}
       </select>
