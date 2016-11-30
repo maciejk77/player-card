@@ -34,8 +34,8 @@ class PlayerList extends Component {
     const position = this.props.player.info.positionInfo.split(' ').pop();
 
     const el = (this.props.player.currentTeam.name.toLowerCase().split(' '));
-    const clubName = `${el[0]}-${el[1]}`;
-
+    if(el.length > 1) { var clubName = `${el[0]}-${el[1]}`; } else { var clubName = `${el[0]}`;}
+    
     return (
       <div>
         <div className="card__player-image"><img src={playerImage}></img></div>
