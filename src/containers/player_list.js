@@ -3,8 +3,8 @@ import { connect } from 'react-redux';
 
 // PROBLEMS
 // Problem was to override .stats.name keys to e.g. goals => Goals - capitalization, goals_assists => Assists
-// That means that keys not always match labels rendered to the screen, Regex does not help here as key names are unpredictable e.g. fwd_pass
-// The second idea was to create el object which will store keys and proper labels for them, again could not get it to render correctly, tried template strings and various other manipulations
+// That means that keys not always match labels rendered to the screen, Regex does not help here as key names are not follosing any patter e.g. fwd_pass
+// The second idea was to create el object which will store keys and proper labels for them, again could not get it to render correctly, tried template strings 
 // I have logic for Goals per match and Passes per minute, but cannot get it to work on the dynamic list I am bulding with renderStats
 // Lastly 3 lines with stats displaying with original keys from JSON are rendered in the order of JSON not the array, not matching card design, was considering adding index/position number to el array and some method to check and append n-th child <div className="card__stats-group">
 
@@ -24,6 +24,7 @@ class PlayerList extends Component {
   }
 
   // // To capitalise first letter in keys/values returned from JSON
+
   // Array.prototype.insert = function (index, item) {
   //   this.splice(index, 0, item);
   // };
@@ -54,9 +55,10 @@ class PlayerList extends Component {
 
     // Or shall I use an object matching display keys with values which are keys for JSON ?
     // const el = { 'goals': 'Goals', 'goal_assist': 'Assists', 'appearances': 'Appearances'};
+    // {playerStats.name} to be replaced with el['`${playerStats.name}`']to access el table
 
     if (statsToDisplay.indexOf(playerStats.name) > -1) {
-      return (<div key={playerStats.name}>{playerStats.name} <span className="stats-group__item-data">{playerStats.value}</span></div>);
+      return (<div key={playerStats.name}>{playerStats.name}<span className="stats-group__item-data">{playerStats.value}</span></div>);
     } else {
       return null;
     }

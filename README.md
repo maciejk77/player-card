@@ -16,8 +16,7 @@ Overall I managed to build clean UI on **master** close to the mockup provided. 
 - `localhost://3000` address to see served JSON data or e.g. `localhost://3000/Rooney`
 
 ##Preview
-
-![player-card screenshot](https://github.com/maciejk77/player-card/blob/master/public/assets/screenshot.png?raw=true)
+<img src="https://github.com/maciejk77/player-card/blob/master/public/assets/screenshot.png?raw=true" width="45%" height="45%" />
 
 ##Done
 - Setting up **Express server** with /json, /json/:player endpoints
