@@ -14,7 +14,7 @@ select {
   width: 250px;
 }
 
-i {
+/*i {
   display: inline-block;
   font-style: normal;
   position: relative;
@@ -28,7 +28,7 @@ i.arrow {
   transform: rotate(135deg);
   top: 39pt;
   width: 0.5em;
-}
+}*/
 
 .container {
   background-color: white;
