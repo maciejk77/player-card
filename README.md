@@ -8,10 +8,6 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 - Please review branch version-B first, before moving to master which is much less robust
 ```
 
-```diff
-+ Last two stats calculations and rendering to be completed on Version-B, completed on master but + with fixed values - can break or show unexpected results when JSON changed.
-```
-
 Overall I managed to build clean UI close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with **axios**, served through **Express server**. 
 
 ##Instruction
