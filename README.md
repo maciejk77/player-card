@@ -46,7 +46,6 @@ Overall I managed to build clean UI on **master** close to the mockup provided. 
 ### Problems
 - UI need a bit of work, lost bottom margin between gray divs with label and stats
 - Challenging to get the exact order of elements from the stats portion of JSON object into UI
-- Challenging to get calculations to work on dynamically changed data, to get stats e.g. goals per match etc.
 
 ## Things to consider
 
