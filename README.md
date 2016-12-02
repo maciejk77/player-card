@@ -1,14 +1,14 @@
-# Player Card
+# Player Card in React/Redux, Express.js server
 
 A project to build player card with data pulled from **static JSON**. There are also image assets e.g. player's image and club badges which are obtained via **CSS image sprite**.  
 
 This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
 ```diff
-- Please review version-B first, before moving to master branch
+- Please review branch version-B first, before moving to master
 ```
 
-Overall I managed to build clean UI on **master** close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with axios, served through Express server. 
+Overall I managed to build clean UI close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with **axios**, served through **Express server**. 
 
 ##Instruction
 - `npm install` to update all dependancies
@@ -28,25 +28,16 @@ Overall I managed to build clean UI on **master** close to the mockup provided. 
 - Resolving **CORS** issue in Express server - adding headers
 - Switching to drop-down from search bar
 
-## Master
-
-### Achievements
-- Clean UI close to mockup provided
-- Club badges implemented correctly
-- Correct calculations for stats i.e. goals for match ( but fragile with [0], [1]-th element can return unexpected errors if JSON stats are reshuffled) 
-
-### Problems
-- Mertesacker issue is connected to some of the stats not available and throwing an error, because of [8]-th element on the array is not available for this player. As mentioned above 'fragile' implementation, won't scale.
-
-
 ## Version-B
 
-### Achievements
-- Overall a good start, attempt to create robust code which won't break if JSON elements are reshuffled
-- 'Mertesacker issue' is resolved by helper array filtering only the values which are needed to display on UI and not throwing an error if not available.
+- Robust code which won't break if JSON elements are reshuffled
+- 'Mertesacker issue' (on master branch) is resolved by helper array filtering only the values which are needed to display on UI and not throwing an error if not available.
+- Math calculations on last two stats and rendering to the screen - to be completed (TBC)
 
-### Problems
-- Math calculations on last two stats and rendering to the screen
+## Master
+
+- Correct calculations for stats i.e. goals for match (but fragile where [0]-th, [1]-st element can return unexpected errors if JSON stats element are reshuffled) 
+- 'Mertesacker issue' is connected to some of the stats not available and throwing an error, because of [8]-th element on the array is not available for this player. As mentioned above 'fragile' implementation, won't scale.
 
 ## Things to consider
 
