@@ -44,8 +44,7 @@ Overall I managed to build clean UI on **master** close to the mockup provided. 
 - 'Mertesacker issue' is resolved by helper array filtering only the values which are needed to display on UI and not throwing an error if not available.
 
 ### Problems
-- UI need a bit of work, lost bottom margin between gray divs with label and stats
-- Challenging to get the exact order of elements from the stats portion of JSON object into UI
+- Math calculations on last two stats and rendering to the screen
 
 ## Things to consider
 
