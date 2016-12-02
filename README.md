@@ -5,7 +5,7 @@ A project to build player card with data pulled from **static JSON**. There are 
 This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
 ```diff
-Please review version-B first, before moving to master branch
+- Please review version-B first, before moving to master branch
 ```
 
 Overall I managed to build clean UI on **master** close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with axios, served through Express server. 
