@@ -1,4 +1,4 @@
-# Player Card
+# Player Card in React/Redux, Express.js server
 
 A project to build player card with data pulled from **static JSON**. There are also image assets e.g. player's image and club badges which are obtained via **CSS image sprite**.  
 
@@ -43,4 +43,4 @@ Overall I managed to build clean UI close to the mockup provided. Club badges ar
 
 - Select a player... with Alderweider on the mock up is not correct from UX standpoint
 - Ideally in above case app should include not available image (outline of a player see an example in public/assets), and placeholders for Name, Surname, Position, Club etc.
-- Badges will appear only for class names which are made of 1 or 2 words e.g. Arsenal/Mancherster City if JSON had i.e. Gremio Porto Allegre that would throw an error and more robust method need to be implemented, not a big challange to refactor that though ster City if JSON had i.e. Gremio Porto Allegre that would throw an error and more robust method need to be implemented, not a big challange to refactor that though 
+- Badges will appear only for class names which are made of 1 or 2 words e.g. Arsenal/Mancherster City if JSON had i.e. Gremio Porto Allegre that would throw an error and more robust method need to be implemented, not a big challange to refactor that though 
