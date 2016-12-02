@@ -4,9 +4,11 @@ A project to build player card with data pulled from **static JSON**. There are 
 
 This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
-There are two versions - **master** & **version-b** on seperate branches, read the description below.
+```diff
+- Please review branch version-B first, before moving to master
+```
 
-Overall I managed to build clean UI on **master** close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with axios, served through Express server. 
+Overall I managed to build clean UI close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with **axios**, served through **Express server**. 
 
 ##Instruction
 - `npm install` to update all dependancies
@@ -26,28 +28,19 @@ Overall I managed to build clean UI on **master** close to the mockup provided. 
 - Resolving **CORS** issue in Express server - adding headers
 - Switching to drop-down from search bar
 
-## Master
-
-### Achievements
-- Clean UI close to mockup provided
-- Club badges implemented correctly
-- Correct calculations for stats i.e. goals for match ( but fragile with [0], [1]-th element can return unexpected errors if JSON stats are reshuffled) 
-
-### Problems
-- Mertesacker issue is connected to some of the stats not available and throwing an error, because of [8]-th element on the array is not available for this player. As mentioned above 'fragile' implementation, won't scale.
-
-
 ## Version-B
 
-### Achievements
-- Overall a good start, attempt to create robust code which won't break if JSON elements are reshuffled
-- 'Mertesacker issue' is resolved by helper array filtering only the values which are needed to display on UI and not throwing an error if not available.
+- Robust code which won't break if JSON elements are reshuffled
+- 'Mertesacker issue' (on master branch) is resolved by helper array filtering only the values which are needed to display on UI and not throwing an error if not available.
+- Math calculations on last two stats and rendering to the screen - to be completed (TBC)
 
-### Problems
-- Math calculations on last two stats and rendering to the screen
+## Master
+
+- Correct calculations for stats i.e. goals for match (but fragile where [0]-th, [1]-st element can return unexpected errors if JSON stats element are reshuffled) 
+- 'Mertesacker issue' is connected to some of the stats not available and throwing an error, because of [8]-th element on the array is not available for this player. As mentioned above 'fragile' implementation, won't scale.
 
 ## Things to consider
 
 - Select a player... with Alderweider on the mock up is not correct from UX standpoint
 - Ideally in above case app should include not available image (outline of a player see an example in public/assets), and placeholders for Name, Surname, Position, Club etc.
-- Badges will appear only for class names which are made of 1 or 2 words e.g. Arsenal/Mancherster City if JSON had i.e. Gremio Porto Allegre that would throw an error and more robust method need to be implemented, not a big challange to refactor that though 
+- Badges will appear only for class names which are made of 1 or 2 words e.g. Arsenal/Mancherster City if JSON had i.e. Gremio Porto Allegre that would throw an error and more robust method need to be implemented, not a big challange to refactor that though ster City if JSON had i.e. Gremio Porto Allegre that would throw an error and more robust method need to be implemented, not a big challange to refactor that though 
