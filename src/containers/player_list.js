@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-// I cannot get it to parse correctly on the app
-// const goalsPerMatch = (parseInt(playerStats.stats.goals) / parseInt(playerStats.stats.appearances)).toFixed(2);
-// const passesPerMinute = ((parseInt(playerStats.stats.fwd_pass) + parseInt(playerStats.stats.backward_pass)) / parseInt(playerStats.stats.mins_played)).toFixed(2);
 
 class PlayerList extends Component {
   constructor(props) {
@@ -11,6 +8,10 @@ class PlayerList extends Component {
   }
 
   renderStats(playerStats) {
+
+    // I cannot get it to parse correctly on the app
+    // const goalsPerMatch = (parseInt(playerStats.name['goals']) / parseInt(playerStats.stats.name['appearances'])).toFixed(2);
+    // const passesPerMinute = ((parseInt(playerStats.name['fwd_pass']) + parseInt(playerStats.name['backward_pass']) / parseInt(playerStats.name['mins_played)).toFixed(2);
 
     // List of stat properties we want to show;
     // If any is found in JSON but not in this array, it'll be ignored;
@@ -49,6 +50,8 @@ class PlayerList extends Component {
         </div>
         <div className="card__stats-group">
           <div className="stats-group__item">{this.props.stats.map(this.renderStats)}</div>
+          <div className="stats-group__item">Goals per match</div>
+          <div className="stats-group__item">Passes per minute</div>
         </div>
       </div>
     );
