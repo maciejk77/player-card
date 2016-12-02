@@ -12,6 +12,7 @@ class PlayerList extends Component {
     // List of stat properties we want to show;
     // If any is found in JSON but not in this array, it'll be ignored;
     const statsToDisplay = ['goals', 'goal_assist', 'appearances'];
+    //const statsElements = ['goals', 'appearances', 'fwd_pass', 'backward_pass', 'mins_played'];
     const el = { 'goals': 'Goals', 'goal_assist': 'Assists', 'appearances': 'Appearances'};
 
     if (statsToDisplay.indexOf(playerStats.name) > -1) {
@@ -24,9 +25,10 @@ class PlayerList extends Component {
     statsElements.indexOf(playerStats.name)
     
   }
-   
-    // const goalsPerMatch = (parseInt(playerStats.name['goals']) / parseInt(playerStats.stats.name['appearances'])).toFixed(2);
-    // const passesPerMinute = ((parseInt(playerStats.name['fwd_pass']) + parseInt(playerStats.name['backward_pass']) / parseInt(playerStats.name['mins_played)).toFixed(2);
+
+  // Wrong - need to iterate over playerStats.name and for element from statsElements array get .value and do math calculations
+  // const goalsPerMatch = (parseInt(playerStats.name['goals']) / parseInt(playerStats.stats.name['appearances'])).toFixed(2);
+  // const passesPerMinute = ((parseInt(playerStats.name['fwd_pass']) + parseInt(playerStats.name['backward_pass']) / parseInt(playerStats.name['mins_played)).toFixed(2);
 
   render() {
 
