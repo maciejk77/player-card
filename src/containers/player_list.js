@@ -7,6 +7,10 @@ class PlayerList extends Component {
     super(props);
   }
 
+  // Temporary fix - will throw error on 'Merteacker' not 8-th array element not available, wrong data if stats elements are reordered
+  // const goalsPerMatch = (parseInt(playerStats[0].value) / parseInt(playerStats[6].value)).toFixed(2);
+  // const passesPerMinute = ((parseInt(playerStats[4].value) + parseInt(playerStats[8].value)) / parseInt(playerStats[7].value)).toFixed(2);
+
   renderStats(playerStats) {
 
     // List of stat properties we want to show;
@@ -25,10 +29,6 @@ class PlayerList extends Component {
     statsElements.indexOf(playerStats.name)
     
   }
-
-  // Wrong - need to iterate over playerStats.name and for element from statsElements array get .value and do math calculations
-  // const goalsPerMatch = (parseInt(playerStats.name['goals']) / parseInt(playerStats.stats.name['appearances'])).toFixed(2);
-  // const passesPerMinute = ((parseInt(playerStats.name['fwd_pass']) + parseInt(playerStats.name['backward_pass']) / parseInt(playerStats.name['mins_played)).toFixed(2);
 
   render() {
 
