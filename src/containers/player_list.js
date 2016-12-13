@@ -7,10 +7,6 @@ class PlayerList extends Component {
     super(props);
   }
 
-  // Temporary fix - will throw error on 'Merteacker' not 8-th array element not available, wrong data if stats elements are reordered
-  // const goalsPerMatch = (parseInt(playerStats[0].value) / parseInt(playerStats[6].value)).toFixed(2);
-  // const passesPerMinute = ((parseInt(playerStats[4].value) + parseInt(playerStats[8].value)) / parseInt(playerStats[7].value)).toFixed(2);
-
   renderStats(playerStats) {
 
     // List of stat properties we want to show;
@@ -19,16 +15,37 @@ class PlayerList extends Component {
     //const statsElements = ['goals', 'appearances', 'fwd_pass', 'backward_pass', 'mins_played'];
     const el = { 'goals': 'Goals', 'goal_assist': 'Assists', 'appearances': 'Appearances'};
 
-    if (statsToDisplay.indexOf(playerStats.name) > -1) {
+    if(statsToDisplay.indexOf(playerStats.name) > -1) {
       return (<div className="stats-group__item" key={playerStats.name}>{el[playerStats.name]}
         <span className="stats-group__item-data">{playerStats.value}</span></div>);
     } else {
       return null;
     }
-    
-    statsElements.indexOf(playerStats.name)
-    
+        
   }
+
+  // Function to return new object where JSON stats name/value are key/value pairs
+  // This will enable quick access to data and calculations with template strings
+  // e.g. getStatsObject(4916) player id ===> {goals: 5, losses: 20, wins: 48, draws: 23...... } all 9 stats per player id
+  // Rendering correct value is basically accessing above e.g. goals / appearances and rendering via template strings
+  
+  /*
+  getStatsObject(id) {
+    var obj = {};
+    
+    // for now data is equal to JSON object...
+    for(var plrs = 0; plrs < data.players.lenght; plrs++) {
+      if(data.players[plrs].player.id === id) {\
+
+        for(var i = 0; i < data.players[plrs].stats.length; i++) {
+          obj[data.players[plrs].stats[i].name] = data.players[plrs].stats[i].value;
+        }
+        return obj;
+      }
+    }
+  
+  }
+  */
 
   render() {
 
