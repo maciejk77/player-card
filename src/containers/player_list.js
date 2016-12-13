@@ -35,13 +35,14 @@ class PlayerList extends Component {
     
     // for now data is equal to JSON object...
     for(var plrs = 0; plrs < data.players.lenght; plrs++) {
+      
       if(data.players[plrs].player.id === id) {\
-
         for(var i = 0; i < data.players[plrs].stats.length; i++) {
           obj[data.players[plrs].stats[i].name] = data.players[plrs].stats[i].value;
         }
         return obj;
       }
+      
     }
   
   }
