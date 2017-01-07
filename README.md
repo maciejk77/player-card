@@ -5,7 +5,7 @@ A project to build player card with data pulled from **static JSON**. There are 
 This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
 ```diff
-- Please review branch version-B first, before moving to master
+- Please review branch version-B first, before moving to master which is much less robust
 ```
 
 Overall I managed to build clean UI close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with **axios**, served through **Express server**. 
@@ -14,8 +14,8 @@ Overall I managed to build clean UI close to the mockup provided. Club badges ar
 - `npm install` to update all dependancies
 - `node server.js` to start the server
 - `npm start` to start the app
-- `localhost://8080` address in the browser to access app
-- `localhost://3000` address to see served JSON data or e.g. `localhost://3000/Rooney`
+- `localhost:8080` address in the browser to access app
+- `localhost:3000` address to see served JSON data or e.g. `localhost:3000/Rooney`
 
 ##Preview
 <img src="https://github.com/maciejk77/player-card/blob/master/public/assets/screenshot.png?raw=true" width="45%" height="45%" />
@@ -32,7 +32,7 @@ Overall I managed to build clean UI close to the mockup provided. Club badges ar
 
 - Robust code which won't break if JSON elements are reshuffled
 - 'Mertesacker issue' (on master branch) is resolved by helper array filtering only the values which are needed to display on UI and not throwing an error if not available.
-- Math calculations on last two stats and rendering to the screen - to be completed (TBC) player_list include getStatsObject method to be refactored (maps JSON to create new easily accessible object for math calculations and rendered by template strings)
+- Math calculations on last two stats and rendering to the screen - to be completed (TBC) player_list include getStats method to be refactored which maps stats collection to new key value pair { name: value } i.e. { goals: 8 }, work to be done on accessing that object by obj.goals / obj['goals'] to retrieve value for math calculations and final rendering by template strings)
 
 ## Master
 
