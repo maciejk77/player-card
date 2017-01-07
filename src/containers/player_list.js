@@ -7,8 +7,8 @@ class PlayerList extends Component {
     super(props);
   }
 
-  renderStats(playerStats) {
 
+  renderStats(playerStats) {
     // List of stat properties we want to show;
     // If any is found in JSON but not in this array, it'll be ignored;
     const statsToDisplay = ['goals', 'goal_assist', 'appearances'];
@@ -24,29 +24,14 @@ class PlayerList extends Component {
         
   }
 
-  // Function to return new object where JSON stats name/value are key/value pairs
-  // This will enable quick access to data and calculations with template strings
-  // e.g. getStatsObject(4916) player id ===> {goals: 5, losses: 20, wins: 48, draws: 23...... } all 9 stats per player id
-  // Rendering correct value is basically accessing above e.g. goals / appearances and rendering via template strings
-  
-  /*
-  getStatsObject(id) {
-    var obj = {};
-    
-    // for now data is equal to JSON object...
-    for(var plrs = 0; plrs < data.players.lenght; plrs++) {
-      
-      if(data.players[plrs].player.id === id) {\
-        for(var i = 0; i < data.players[plrs].stats.length; i++) {
-          obj[data.players[plrs].stats[i].name] = data.players[plrs].stats[i].value;
-        }
-        return obj;
-      }
-      
-    }
-  
+  // Return new mapping for stats collection, where key value pairs are {name: value}
+  getStats(playerStats) {
+    ([playerStats]).reduce((previousValue, currentValue) => {
+      previousValue[currentValue.name] = currentValue.value;
+      console.log(previousValue); // to be deleted
+      return previousValue;
+    }, {})
   }
-  */
 
   render() {
 
@@ -72,6 +57,7 @@ class PlayerList extends Component {
         <div className="card__stats-group">
           <div>{this.props.stats.map(this.renderStats)}
           </div>
+          {this.props.stats.map(this.getStats)}
           <div className="stats-group__item">Goals per match<span className="stats-group__item-data">TBC</span></div>
           <div className="stats-group__item">Passes per minute<span className="stats-group__item-data">TBC</span></div>
         </div>

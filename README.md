@@ -32,7 +32,7 @@ Overall I managed to build clean UI close to the mockup provided. Club badges ar
 
 - Robust code which won't break if JSON elements are reshuffled
 - 'Mertesacker issue' (on master branch) is resolved by helper array filtering only the values which are needed to display on UI and not throwing an error if not available.
-- Math calculations on last two stats and rendering to the screen - to be completed (TBC) player_list include getStatsObject method to be refactored (maps JSON to create new easily accessible object for math calculations and rendered by template strings)
+- Math calculations on last two stats and rendering to the screen - to be completed (TBC) player_list include getStats method to be refactored which maps stats collection to new key value pair { name: value } i.e. { goals: 8 }, work to be done on accessing that object by obj.goals / obj['goals'] to retrieve value for math calculations and final rendering by template strings)
 
 ## Master
 
