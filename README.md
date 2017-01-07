@@ -14,8 +14,8 @@ Overall I managed to build clean UI close to the mockup provided. Club badges ar
 - `npm install` to update all dependancies
 - `node server.js` to start the server
 - `npm start` to start the app
-- `localhost://8080` address in the browser to access app
-- `localhost://3000` address to see served JSON data or e.g. `localhost://3000/Rooney`
+- `localhost:8080` address in the browser to access app
+- `localhost:3000` address to see served JSON data or e.g. `localhost:3000/Rooney`
 
 ##Preview
 <img src="https://github.com/maciejk77/player-card/blob/master/public/assets/screenshot.png?raw=true" width="45%" height="45%" />
