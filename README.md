@@ -36,7 +36,7 @@ Overall I managed to build clean UI close to the mockup provided. Club badges ar
 
 ## Master
 
-- Correct calculations for stats i.e. goals for match (but fragile where [0]-th, [1]-st element can return unexpected errors if JSON stats element are reshuffled) 
+- Correct calculations for stats i.e. goals for match (but fragile where [0]-th, [1]-st element can return unexpected errors if JSON stats element is reshuffled) 
 - 'Mertesacker issue' is connected to some of the stats not available and throwing an error, because of [8]-th element on the array is not available for this player. As mentioned above 'fragile' implementation, won't scale.
 
 ## Things to consider

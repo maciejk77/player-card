@@ -24,12 +24,20 @@ class PlayerList extends Component {
         
   }
 
+  getData(key, defaultValue = '') {
+    // I suggest to cache result of next call (invalidate cache when needed)
+    const data = this.getStats(playerStats);
+    return data[key] || defaultValue;
+  }
+
   // Return new mapping for stats collection, where key value pairs are {name: value}
   getStats(playerStats) {
+    // the original stats object(s) passed Object {name:"goals", value:65}, {name: "losses", value:49}, ...
+    console.log(playerStats); 
     ([playerStats]).reduce((previousValue, currentValue) => {
       previousValue[currentValue.name] = currentValue.value;
-      console.log(previousValue); // to be deleted
-      return previousValue;
+      console.log(previousValue); // how object is remapped to name: value key/value pair Object {goals: 65}
+      return previousValue
     }, {})
   }
 
@@ -40,14 +48,17 @@ class PlayerList extends Component {
       return null;
     }
 
+    let clubName;
     const playerImage = `public/assets/p${this.props.player.id}.png`;
     const position = this.props.player.info.positionInfo.split(' ').pop();
-
     const el = (this.props.player.currentTeam.name.toLowerCase().split(' '));
-    if(el.length > 1) { var clubName = `${el[0]}-${el[1]}`; } else { var clubName = `${el[0]}`; }
+
+    if(el.length > 1) { clubName = `${el[0]}-${el[1]}`; } else { clubName = `${el[0]}`; }
 
     return (
       <div>
+        {this.props.stats.map(this.getStats)}
+        {getData('goals')}
         <div className="card__player-image"><img src={playerImage}></img></div>
         <div className="card__club-badge"><div className={clubName}></div></div>
         <div className="card__info">
@@ -57,7 +68,6 @@ class PlayerList extends Component {
         <div className="card__stats-group">
           <div>{this.props.stats.map(this.renderStats)}
           </div>
-          {this.props.stats.map(this.getStats)}
           <div className="stats-group__item">Goals per match<span className="stats-group__item-data">TBC</span></div>
           <div className="stats-group__item">Passes per minute<span className="stats-group__item-data">TBC</span></div>
         </div>
