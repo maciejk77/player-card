@@ -25,18 +25,17 @@ class PlayerList extends Component {
   }
 
   getData(key, defaultValue = '') {
-    // I suggest to cache result of next call (invalidate cache when needed)
-    const data = this.getStats(playerStats);
+    const data = this.getStats(this.props.stats);
     return data[key] || defaultValue;
   }
 
   // Return new mapping for stats collection, where key value pairs are {name: value}
   getStats(playerStats) {
     // the original stats object(s) passed Object {name:"goals", value:65}, {name: "losses", value:49}, ...
-    console.log(playerStats); 
+    //console.log(playerStats); 
     ([playerStats]).reduce((previousValue, currentValue) => {
       previousValue[currentValue.name] = currentValue.value;
-      console.log(previousValue); // how object is remapped to name: value key/value pair Object {goals: 65}
+      //console.log(previousValue); // how object is remapped to name: value key/value pair Object {goals: 65}
       return previousValue
     }, {})
   }
@@ -56,9 +55,7 @@ class PlayerList extends Component {
     if(el.length > 1) { clubName = `${el[0]}-${el[1]}`; } else { clubName = `${el[0]}`; }
 
     return (
-      <div>
-        {this.props.stats.map(this.getStats)}
-        {getData('goals')}
+      <div> 
         <div className="card__player-image"><img src={playerImage}></img></div>
         <div className="card__club-badge"><div className={clubName}></div></div>
         <div className="card__info">
