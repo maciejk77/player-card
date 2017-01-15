@@ -32,11 +32,10 @@ class PlayerList extends Component {
   // Return new mapping for stats collection, where key value pairs are {name: value}
   getStats(playerStats) {
     // the original stats object(s) passed Object {name:"goals", value:65}, {name: "losses", value:49}, ...
-    //console.log(playerStats); 
-    ([playerStats]).reduce((previousValue, currentValue) => {
+    playerStats.reduce((previousValue, currentValue) => {
+      console.log(previousValue); // how object is remapped to name: value key/value pair Object {goals: 65}
       previousValue[currentValue.name] = currentValue.value;
-      //console.log(previousValue); // how object is remapped to name: value key/value pair Object {goals: 65}
-      return previousValue
+      return previousValue;
     }, {})
   }
 
@@ -54,6 +53,9 @@ class PlayerList extends Component {
 
     if(el.length > 1) { clubName = `${el[0]}-${el[1]}`; } else { clubName = `${el[0]}`; }
 
+    // replace TBC below to render correct result
+    //  TBC => { this.getData('goals') / this.getData('apearances') } or is this with `${ }` ??
+    //  TBC => { (this.getData('fwd_pass') + this.getData('backward_pass')) / this.getData('mins_played') } or is this with `${ }` ??
     return (
       <div> 
         <div className="card__player-image"><img src={playerImage}></img></div>
@@ -63,8 +65,7 @@ class PlayerList extends Component {
           <div className="card__info">{position}</div>
         </div>
         <div className="card__stats-group">
-          <div>{this.props.stats.map(this.renderStats)}
-          </div>
+          <div>{this.props.stats.map(this.renderStats)}</div>
           <div className="stats-group__item">Goals per match<span className="stats-group__item-data">TBC</span></div>
           <div className="stats-group__item">Passes per minute<span className="stats-group__item-data">TBC</span></div>
         </div>
