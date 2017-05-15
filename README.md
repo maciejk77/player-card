@@ -10,17 +10,17 @@ This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleSta
 
 Overall I managed to build clean UI close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with **axios**, served through **Express server**. 
 
-##Instruction
+## Instruction
 - `npm install` to update all dependancies
 - `node server.js` to start the server
 - `npm start` to start the app
 - `localhost:8080` address in the browser to access app
 - `localhost:3000` address to see served JSON data or e.g. `localhost:3000/Rooney`
 
-##Preview
+## Preview
 <img src="https://github.com/maciejk77/player-card/blob/master/public/assets/screenshot.png?raw=true" width="45%" height="45%" />
 
-##Done
+## Done
 - Setting up **Express server** with /json, /json/:player endpoints
 - Adding assets to /data and /assets in public folder
 - Installing **redux-promise**
