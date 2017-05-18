@@ -1,4 +1,4 @@
-# Player Card in React/Redux, Express.js server
+# Player Card in React and Redux
 
 A project to build player card with data pulled from **static JSON**. There are also image assets e.g. player's image and club badges which are obtained via **CSS image sprite**.  
 
