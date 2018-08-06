@@ -8,7 +8,7 @@ class SearchList extends Component {
     super(props);
 
     // Set default player as blank
-    this.state = { currentPlayer: '' };
+    this.state = { currentPlayer: 'Rooney' };
 
     // Get list of players
     this.props.getPlayers();
