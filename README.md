@@ -1,12 +1,10 @@
-# Player Card in React and Redux
+# Player Card in React/Redux, Express.js server
 
 A project to build player card with data pulled from **static JSON**. There are also image assets e.g. player's image and club badges which are obtained via **CSS image sprite**.  
 
 This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
-```diff
-- Please review branch version-B first, before moving to master which is much less robust
-```
+[***This app was rewritten from scratch to newer version here***](https://github.com/maciejk77/player-card-react) to use minimal set up of **create-react-app**, Sass, cleaner/more compact code, ES6 destructuring, Flex
 
 Overall I managed to build clean UI close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with **axios**, served through **Express server**. 
 
