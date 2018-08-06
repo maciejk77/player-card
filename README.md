@@ -4,7 +4,7 @@ A project to build player card with data pulled from **static JSON**. There are 
 
 This project base was scaffolded with a help of Stephen Grinder's ReduxSimpleStarter. 
 
-This app was rewritten from scratch to [***newer version***](https://github.com/maciejk77/player-card-react) to use minimal set up of **create-react-app**, Sass, cleaner/more compact code, ES6 destructuring, Flex
+[***This app was rewritten from scratch to newer version here***](https://github.com/maciejk77/player-card-react) to use minimal set up of **create-react-app**, Sass, cleaner/more compact code, ES6 destructuring, Flex
 
 Overall I managed to build clean UI close to the mockup provided. Club badges are implemented correctly via CSS classes and image sprite. Data is fetched with **axios**, served through **Express server**. 
 
